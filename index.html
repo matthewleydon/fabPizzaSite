@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-  <section id="mainSection">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,32 +10,42 @@
   </head>
   <body>
     <section id="mainSection">
-      
-    <!-- <p>Due to adverse weather in some locations delivery may take longer than usual. Sorry for the incovenience and thank you for your patience.</p> -->
-    <!-- https://www.pizzahut.co.uk -->
-    <header>
-      <section class="desktopView">
-        <!-- <ul>
-          <li><a href="#" class="navlinks">Deals</a></li>
-          <li><a href="#" class="navlinks">Locations</a></li>
-          <li><a href="#" class="navlinks">Help</a></li>
-          <li><a href="#" class="navlinks">Contact</a></li>
-        </ul> -->
+      <header>
+        <section class="desktopView">
+        <div class="warning">
+          <p>Due to adverse weather in some locations delivery may take longer than usual. Sorry for the incovenience and thank you for your patience.</p>
+        </div>
+        <nav class="navBar">
+          <div class="navLeft">
+            <img src="./images/img_2.PNG" alt="pizzahut">
+          </div>
+          <ul id='navMiddle'>
+            <li><a href="#" class="navlinks">Deals</a></li>
+            <li><a href="#" class="navlinks">Locations</a></li>
+            <li><a href="#" class="navlinks">Help</a></li>
+            <li><a href="#" class="navlinks">Contact</a></li>
+          </ul>
+          <div class="navRight">
+            <img src="./images/img_3.PNG" alt="hutrewards">
+          </div>
+        </nav>
       </section>
       <section class="mobileView">
-        <img src="./images/img_2.PNG" alt="pizza hut">
+        <img src="./images/img_2.PNG" alt="pizzahut">
       </section>
     </header>
 
 
 
     <main class="banner">
-      <!-- <div>
+      <section class="desktopView">
+          <img src="./images/img_1.jpg" alt="card" class="banner-promo">
+      <div class='banner-text'>
         <h1>Contact-free</h1>
         <p>on all deliveries across the UK.</p>
-      </div> -->
+      </div>
 
-      <!-- <section>
+      <section class='order'>
         <h1>Delivery</h1>
         <h2>Contact-Free</h2>
         <p>All our deliveries are contact-free to keep everyone healthy. All orders will need to be paid online by debit/credit card.</p>
@@ -45,7 +54,8 @@
           <input type="text" placeholder="Postcode" />
           <button>Find My Hut</button>
         </form>
-      </section> -->
+      </section>
+    </section>
       <section class="mobileView">
         <ul id="navMiddle">
           <li><a href="#" class="navlinks">Deals</a></li>
@@ -62,14 +72,14 @@
     
   </section>
     <footer>
-      <div class="desktopView">
+      <div class="desktopView" id="footerLeft">
       CopyRight &copy; PurpleBeard - Student Name
-      </div>
-      <div id="footerRight">
+    </div>
+      <div id='footerRight'>
         <i class="fab fa-facebook-f"></i>
         <i class="fab fa-twitter"></i>
         <i class="fab fa-instagram"></i>
-      </div>
+        </div>
     </footer>
   </body>
 </html>

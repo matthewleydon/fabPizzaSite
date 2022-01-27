@@ -14,6 +14,11 @@ body {
   display: none;
 }
 
+#mainSection {
+	min-height: 100vh;
+	margin-bottom: -75px;
+}
+
 /* ========================================================= */
 /* MOBILE SECTION */
 
@@ -35,7 +40,7 @@ header .mobileView img {
 
 /* Body */
 
-.banner {
+.banner .mobileView {
   background-image: url(../images/img_0.jpg);
   background-size: cover;
   height: 85vh;
@@ -74,6 +79,7 @@ main .mobileView .banner-text {
 main .mobileView .banner-text h1 {
 	font-size: 3.5rem;
 	margin-bottom: 5vh;
+	text-align: center;
 }
 
 main .mobileView .banner-text p {
@@ -85,10 +91,6 @@ main .mobileView .banner-text p {
 /* Footer */
 /* In order to keep the footer at the bottom of the page, we created a section around the Header and Main on the html file called "mainSection" */
 /* We then set the following criteria for "mainSection" which keeps it at the top, but keeps a margin of -75px at the bottom */
-#mainSection {
-  min-height: 100vh;
-  margin-bottom: -75px;
-}
 
 footer {
   display: flex;
@@ -121,4 +123,197 @@ footer {
 /* ========================================================= */
 
 @media screen and (min-width: 400px) {
+	.desktopView {
+		display: block;
+	}
+
+.mobileView {
+	display: none;
+}
+/* Footer */
+
+#footerLeft {
+	display: flex;
+	align-items: flex-end;
+	margin-left: 5px;
+	margin-bottom: 10px;
+	color: white;
+}
+
+#footerRight {
+	width: 30vh;
+}
+
+/* Header */
+
+header {
+	display: block;
+	width: 100vw;
+	height: 100px;
+	background-color: black;
+}
+
+.warning {
+	height: 25px;
+	color: white;
+	font-size: 14px;
+	text-align: center;
+	padding: 0.5em;
+}
+
+.navBar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100vw;
+	height: 75px;
+}
+
+.navLeft img {
+	width: 200px;
+	height: 40px;
+}
+
+.navRight img {
+	width: 130px;
+	height: 35px;
+}
+
+.navLeft {
+	margin-left: 4rem;
+}
+
+.navRight {
+	margin-right: 4rem;
+}
+
+#navMiddle {
+	display: flex;
+}
+
+#navMiddle li {
+  background-color: #da1a31;
+	margin: 0px 2rem;
+	padding: 8px 15px;
+	border-radius: 10px;
+	list-style-type: none;
+	cursor: pointer;
+	transition: 0.2s ease-in-out;
+}
+
+#navMiddle li:hover {
+	transform: scale(1.1);
+}
+
+#navMiddle li a {
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+}
+
+/* body */
+
+.banner {
+  background-image: url(../images/img_0.jpg);
+  background-size: cover;
+  height: 85vh;
+  width: 100vw;
+}
+
+.banner-promo {
+	position: relative;
+	display: block;
+	top: 100px;
+	left: 65vw;
+	width: 375px;
+	height: 250px;
+	border: black 1px solid;
+	box-shadow: box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.banner-text {
+	color: #da1a31;
+	position: relative;
+	display: inline-block;
+	top: 200px;
+	left: 65vw;
+	text-align: center;
+	width: 375px;
+	text-transform: capitalize;
+}
+
+.banner-text h1 {
+	font-size: 2em;
+}
+
+.banner-text p {
+	font-size: 1.25em;
+}
+
+/* Order form */
+
+.order {
+	background-color: white;
+	position: relative;
+	width: 600px;
+	top: 250px;
+	margin: auto;
+	border: 1px solid black;
+	box-shadow: box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	font-size: 15px;
+	padding: 1em;
+}
+
+.order h1 {
+	color: #da1a31;
+	margin-bottom: 0.5em;
+}
+
+.order h2 {
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.order h2, p {
+	line-height: 1.5em;
+	margin-bottom: 0.5em;
+}
+
+.order form {
+	border: 1px solid black;
+	width: 100%;
+	padding: 1em 0;
+}
+
+.order form input {
+	width: 60%;
+	border: 1px solid lightgray;
+	height: 3.5em;
+	margin-left: 10px;
+	margin-right: 0px;
+	border-radius: 10px 0px 0px 10px;
+}
+
+.order form input::placeholder{
+	font-weight: bold;
+	color: lightgray;
+	padding-left: 1em;
+}
+
+.order form button {
+	background-color: green;
+	color: white;
+	height: 3.5em;
+	width: 20%;
+	border-radius: 0px 10px 10px 0px;
+	font-weight: bold;
+	border: none;
+	cursor: pointer;
+}
+
+.order form input, button {
+	padding: 1em;
+	font-weight: bold;
+}
+
 }
